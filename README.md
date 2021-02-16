@@ -2,8 +2,6 @@
 
 # **Bloodstream**
 
----
-
 ## **Summary**
 
 - #### A prototype Apple Watch & iOS application that monitors heart rate and reflex time to determine if a user is intoxicated.
