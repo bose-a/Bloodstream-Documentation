@@ -10,8 +10,6 @@
 
 - #### This project still has a long way to go, but I've made significant progress. I've detailed several pieces below.
 
-  ---
-
 ## **Accelerometer & Gyrometer**
 
 - #### In order to measure reflex time, I tapped into the sensor data from the Apple Watch. 
