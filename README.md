@@ -12,7 +12,7 @@
 
 - The goal of the code below is to record how long it takes for the user to raise the watch and look at a notification, etc.
 
-- The code below shows the basic setup of a MotionManger class; which holds the necessary functions to process real-time sensor data. I've abstracted many helper functions and left the important stuff in. 
+- The code below shows the basic setup of a MotionManager class; which holds the necessary functions to process real-time sensor data. I've abstracted many helper functions and left the important stuff in. 
 
 - The app samples information at a frequency of 50 Hz!
 
