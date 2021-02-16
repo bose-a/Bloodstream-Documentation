@@ -1,10 +1,10 @@
 ## **Summary**
 
-- #### A prototype Apple Watch & iOS application that monitors heart rate and reflex time to determine if a user is intoxicated.
+- A prototype Apple Watch & iOS application that monitors heart rate and reflex time to determine if a user is intoxicated.
 
-- #### When a user is intoxicated, their heart rate slowly dips below average, and their reflex time is considerably reduced.
+- When a user is intoxicated, their heart rate slowly dips below average, and their reflex time is considerably reduced.
 
-- #### This project still has a long way to go, but I've made significant progress. I've detailed several pieces below.
+- This project still has a long way to go, but I've made significant progress. I've detailed several pieces below.
 
 ## **Accelerometer & Gyrometer**
 
