@@ -8,13 +8,13 @@
 
 ## **Accelerometer & Gyrometer**
 
-- #### In order to measure reflex time, I tapped into the sensor data from the Apple Watch. 
+- In order to measure reflex time, I tapped into the sensor data from the Apple Watch. 
 
-- #### The goal of the code below is to record how long it takes for the user to raise the watch and look at a notification, etc.
+- The goal of the code below is to record how long it takes for the user to raise the watch and look at a notification, etc.
 
-- #### The code below shows the basic setup of a MotionManger class; which holds the necessary functions to process real-time sensor data. I've abstracted many helper functions and left the important stuff in. 
+- The code below shows the basic setup of a MotionManger class; which holds the necessary functions to process real-time sensor data. I've abstracted many helper functions and left the important stuff in. 
 
-- #### The app samples information at a frequency of 50 Hz!
+- The app samples information at a frequency of 50 Hz!
 
 ```swift
 class MotionManager{
@@ -36,7 +36,7 @@ class MotionManager{
     func updateMetricsDelegate() {...} // Sends recorded data back to main swift file
 ```
 
-- #### The function below recieves data from the sensor and formats it nicely.
+- The function below recieves data from the sensor and formats it nicely.
 
 ```swift
 func processDeviceMotion(_ d: CMDeviceMotion) {
@@ -47,9 +47,9 @@ func processDeviceMotion(_ d: CMDeviceMotion) {
 }
 ```
 
-- #### Lastly, the main controller of the watch recieves the data and tells us how long it took for the user to look at the watch.
+- Lastly, the main controller of the watch recieves the data and tells us how long it took for the user to look at the watch.
 
-- #### Right now, it detects when the user puts the watch down by his side, and immediately sends a dummy notification. It then records the amount of time it takes for the user to raise his wrist.
+- Right now, it detects when the user puts the watch down by his side, and immediately sends a dummy notification. It then records the amount of time it takes for the user to raise his wrist.
 
 ```swift
 // Function below is called when there are significant changes in motion
@@ -84,11 +84,11 @@ func sendNotification(...)
 
 ## **Heart Rate Data**
 
-- #### The app currently records a breadth of heart rate data, including resting heart rate, running heart rate, and sleeping heart rate.
+- The app currently records a breadth of heart rate data, including resting heart rate, running heart rate, and sleeping heart rate.
 
-- #### Doing this prevents our app from alerting the user whenever their heart rate is low. The user could simply be sleeping!
+- Doing this prevents our app from alerting the user whenever their heart rate is low. The user could simply be sleeping!
 
-- #### The code below uses WatchKit to record heart rate with minimal code. It creates a query that constantly grabs data from the HealthKit store. 
+- The code below uses WatchKit to record heart rate with minimal code. It creates a query that constantly grabs data from the HealthKit store. 
 
 ```swift
 func fetchLatestHeartRateSample(completionHandler: @escaping (_ sample: HKQuantitySample) -> Void) {
@@ -110,11 +110,11 @@ func getDaySteps(...)
 
 ## **Front End**
 
-- #### With some functionality for heart rate & reflex time built, I built a front end to display the values. 
+- With some functionality for heart rate & reflex time built, I built a front end to display the values. 
 
-- #### The iPhone app seamlessly syncs up with the real time data on the watch. 
+- The iPhone app seamlessly syncs up with the real time data on the watch. 
 
-- #### Watch the app in action below!
+- Watch the app in action below!
 ![](phonetest.gif)
 ![](watch.gif)<br/>
 
