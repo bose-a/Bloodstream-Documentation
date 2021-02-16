@@ -115,6 +115,7 @@ func getDaySteps(...)
 - The iPhone app seamlessly syncs up with the real time data on the watch. 
 
 - Watch the app in action below!
+
 ![](phonetest.gif)
 ![](watch.gif)<br/>
 
