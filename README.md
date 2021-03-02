@@ -1,8 +1,8 @@
 ## **Summary**
 
-- A prototype Apple Watch & iOS application that monitors heart rate and reflex time to determine if a user is intoxicated.
+- *Bloodstream* is a prototype Apple Watch app that analyzes heart rate and reflex time to determine if a user is intoxicated.
 
-- When a user is intoxicated, their heart rate slowly dips below average, and their reflex time is considerably reduced.
+- During signficant inebriation, studies show that pulse variation increases and reaction time decreases.
 
 - This project still has a long way to go, but I've made significant progress. I've detailed several pieces below.
 
@@ -86,7 +86,7 @@ func sendNotification(...)
 
 - The app currently records a breadth of heart rate data, including resting heart rate, running heart rate, and sleeping heart rate.
 
-- Doing this prevents our app from alerting the user whenever their heart rate is low. The user could simply be sleeping!
+- Doing this prevents our app from alerting the user whenever their heart rate variability changes. The user could simply be working out!
 
 - The code below uses WatchKit to record heart rate with minimal code. It creates a query that constantly grabs data from the HealthKit store. 
 
