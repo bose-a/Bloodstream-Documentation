@@ -10,7 +10,7 @@
 
 - In order to measure reflex time, I tapped into the sensor data from the Apple Watch. 
 
-- The goal of the code below is to record how long it takes for the user to raise the watch and look at a notification, etc.
+- The goal is to record how long it takes for the user to raise the watch and look at a notification.
 
 - The code below shows the basic setup of a MotionManager class; which holds the necessary functions to process real-time sensor data. I've abstracted many helper functions and left the important stuff in. 
 
